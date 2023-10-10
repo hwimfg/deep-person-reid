@@ -1,9 +1,9 @@
 from __future__ import division, print_function, absolute_import
 import os.path as osp
 import warnings
-from scipy.io import loadmat
 
 from ..dataset import VideoDataset
+from torchreid.data.util import loadmat
 
 
 class Mars(VideoDataset):

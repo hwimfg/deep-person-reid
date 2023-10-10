@@ -1,9 +1,9 @@
 from __future__ import division, print_function, absolute_import
 import glob
 import os.path as osp
-from scipy.io import loadmat
 
 from torchreid.utils import read_json, write_json
+from torchreid.data.util import loadmat
 
 from ..dataset import ImageDataset
 

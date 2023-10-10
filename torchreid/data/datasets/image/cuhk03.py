@@ -104,7 +104,7 @@ class CUHK03(ImageDataset):
 
         import h5py
         import imageio
-        from scipy.io import loadmat
+        from torchreid.data.util import loadmat
 
         mkdir_if_missing(self.imgs_detected_dir)
         mkdir_if_missing(self.imgs_labeled_dir)
