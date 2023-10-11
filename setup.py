@@ -12,11 +12,10 @@ def readme():
 
 
 def find_version():
-    return "1.4.0+git"
-    # version_file = 'torchreid/__init__.py'
-    # with open(version_file, 'r') as f:
-    #     exec(compile(f.read(), version_file, 'exec'))
-    # return locals()['__version__']
+    version_file = 'torchreid/__init__.py'
+    with open(version_file, 'r') as f:
+        exec(compile(f.read(), version_file, 'exec'))
+    return locals()['__version__']
 
 
 def numpy_include():
